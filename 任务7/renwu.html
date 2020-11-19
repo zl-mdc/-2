@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .head {
+            height: 53px;
+            width: 100%;
+            background-color: white;
+        }
+        
+        .logo {
+            float: left;
+            color: #cccccc;
+        }
+        
+        .head ul li {
+            height: 53px;
+            display: block;
+            float: right;
+            padding-left: 20px;
+        }
+        
+        .head ul li a {
+            line-height: 53px;
+            display: block;
+            color: #83868d;
+        }
+        
+        .head ul li a:hover {
+            border-bottom: 1px solid red;
+        }
+        /* .three {
+            position: relative;
+        } */
+        
+        .three ul li {
+            display: block;
+            height: 250px;
+            width: 305px;
+            background-color: white;
+            float: left;
+            position: relative;
+        }
+        
+        .three ul li span {
+            position: absolute;
+            padding-left: 90px;
+            padding-top: 120px;
+        }
+        
+        .three ul li img {
+            position: absolute;
+            margin: 80px 125px;
+        }
+        
+        .four {
+            height: 610px;
+            background-color: #eeeeee;
+        }
+        
+        .four img {
+            margin-top: 90px;
+            margin-left: 578px;
+        }
+        
+        .four p {
+            font-size: 35px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-left: 350px;
+        }
+        
+        .five {
+            width: 1230px;
+            height: 341px;
+            background-image: url(images/8_02.jpg  );
+        }
+        
+        .five span {
+            display: block;
+            padding-left: 500px;
+            padding-top: 70px;
+            color: #eeeeee;
+        }
+        
+        .five p {
+            color: #eeeeee;
+            padding-left: 400px;
+            padding-top: 20px;
+        }
+        
+        .six {
+            height: 2px;
+            background-color: white;
+            width: 30px;
+            margin-left: 570px;
+            margin-top: 15px;
+        }
+        
+        .five select {
+            width: 235px;
+            height: 35px;
+            margin-left: 50px;
+            margin-top: 52px;
+        }
+        
+        .seven {
+            position: relative;
+            height: 550px;
+            width: 1250px;
+            background-color: #cccccc;
+        }
+        
+        .eight {
+            position: absolute;
+            width: 1040px;
+            height: 300px;
+            /* background-color: wheat; */
+            left: 120px;
+            top: 100px;
+        }
+        
+        .nine {
+            width: 220px;
+            height: 338px;
+            background-color: #ffffff;
+            float: left;
+            margin-right: 40px;
+        }
+        
+        .nine span {
+            display: inline-block;
+            padding-left: 70px;
+            font-size: 20px;
+            padding-top: 4px;
+        }
+        
+        .nine p {
+            font-size: 12px;
+            color: red;
+            text-align: center;
+        }
+        
+        .ten {
+            height: 400px;
+            background-color: pink;
+            position: relative;
+        }
+        
+        .ten .ten1 {
+            position: absolute;
+            background-image: url(images/13_02.jpg);
+            background-size: 850px 400px;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 850px;
+        }
+        
+        .ten2 {
+            position: absolute;
+            right: 0;
+            width: 410px;
+            height: 400px;
+            background-color: white;
+        }
+        
+        .eleven {
+            /* position: relative; */
+            height: 400px;
+            background-color: pink;
+        }
+        
+        .eleven1 {
+            /* position: absolute; */
+            float: left;
+            width: 400px;
+            height: 400px;
+            background-color: rosybrown;
+        }
+        
+        .eleven2 {
+            /* position: absolute; */
+            float: left;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+        }
+        
+        .eleven3 img {
+            height: 400px;
+            width: 460px;
+        }
+        
+        .twelve {
+            background-color: white;
+            height: 250px;
+        }
+        
+        .thirteen {
+            height: 300px;
+            background-color: white;
+        }
+        
+        .thirteen1 {
+            background-color: white;
+            float: left;
+            height: 300px;
+            width: 400px;
+            margin-left: 50px;
+        }
+        
+        .thirteen2 {
+            float: left;
+            position: relative;
+        }
+        
+        .thirteen2 .name {
+            float: left;
+            width: 300px;
+            height: 30px;
+            background-color: #eeeeee;
+            line-height: 30px;
+        }
+        
+        .thirteen2 .age {
+            width: 300px;
+            height: 30px;
+            background-color: #eeeeee;
+            float: left;
+            margin-left: 30px;
+            line-height: 30px;
+        }
+        
+        .thirteen2 .phone {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 300px;
+            height: 30px;
+            background-color: #eeeeee;
+            line-height: 30px;
+        }
+        
+        .thirteen2 .address {
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            top: 50px;
+            left: 330px;
+            background-color: #eeeeee;
+            line-height: 30px;
+        }
+        
+        .thirteen2 .life {
+            position: absolute;
+            top: 100px;
+            width: 630px;
+            height: 100px;
+            background-color: #eeeeee;
+        }
+        
+        .thirteen2 .submit {
+            position: absolute;
+            top: 220px;
+            width: 630px;
+            height: 30px;
+            background-color: #eeeeee;
+            line-height: 30px;
+            text-align: center;
+        }
+        
+        .fourteen {
+            height: 250px;
+            background-color: #32363e;
+        }
+        
+        .fifteen {
+            background-color: #2f3038;
+            height: 50px;
+            color: white;
+            line-height: 50px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="images/2.jpg" alt="" style="height:52px;">
+        </div>
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">爱心社区</a></li>
+            <li><a href="#">项目介绍</a></li>
+            <li><a href="#">精彩活动</a></li>
+            <li><a href="#">首页</a></li>
+        </ul>
+    </div>
+    <div class="neck">
+        <img src="images/1.jpg" alt="">
+    </div>
+    <div class="three">
+        <ul>
+            <li>
+
+                <img src="images/3.jpg" alt="">
+                <span>打造全新的世界观，让你更爱你的生活</span>
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="">
+                <span>丰富多彩的公益活动，发挥新世界的主人公意识</span>
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="">
+                <span>时尚的新理念，超前体验位置的生活</span>
+            </li>
+            <li>
+                <img src="images/6.jpg" alt="">
+                <span>完善的培养体制，培养你全新的世界观</span>
+            </li>
+        </ul>
+    </div>
+    <div class="four">
+        <img src="images/7_03.jpg" alt="">
+        <p>关于新世界，你不知道的还有什么呢？</p>
+    </div>
+    <div class="five">
+        <span>查找新世界城市活动信息</span>
+        <div class="six"></div>
+        <p>每个城市的有不同的活动信息，请自主查询你所所需要了解的城市</p>
+        <select name="中国" id="国籍">
+            <option value="中国">中国</option>
+        </select>
+        <select name="" id="">
+            <option value="省份">省份</option>
+            <option >北京市</option>
+            <option >天津市</option>
+            <option >河北省</option>
+            <option >陕西省</option>
+            <option >内蒙古自治区</option>
+            <option >重庆市</option>
+        </select>
+        <select name="" id="">
+            <option value="省份">城市</option>   
+        </select>
+        <button style="width: 235px;height: 35px;background-color:red; text-align: center;">搜索</button>
+
+    </div>
+    <div class="seven">
+        <div class="eight">
+            <div class="nine">
+                <img src="images/9_03.jpg" style="padding-left: 6px; padding-top: 12px;">
+                <span>北京活动</span>
+                <p>新社区大联盟</p>
+            </div>
+            <div class="nine">
+                <img src="images/10_03.jpg" style="padding-left: 6px; padding-top: 12px;">
+                <span>上海活动</span>
+                <p>夜上海新景观探索</p>
+            </div>
+            <div class="nine">
+                <img src="images/11_03.jpg" style="padding-left: 6px; padding-top: 12px;">
+                <span>深圳活动</span>
+                <p>全新海岸线观点站</p>
+            </div>
+            <div class="nine">
+                <img src="images/12_03.jpg" style="padding-left: 6px; padding-top: 12px;">
+                <span>香港活动</span>
+                <p>奢侈消费大派送</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ten">
+        <div class="ten1">
+            <p style="font-size: 30px; color: white;padding-left: 370px;padding-top: 80px;">新世界</p>
+            <p style="font-size: 90px; padding-left: 320px;color: white; ">TIME</p>
+            <p style="font-size: 20px; color: white;padding-left: 350px;">创新世界-北京</p>
+            <p style="font-size: 20px; color: white; padding-left: 350px;">2016.04.01</p>
+        </div>
+        <div class="ten2">
+            <p style="padding-top: 100px; padding-left: 150px; font-size: 20px;">
+                <span>新世界</span>
+                <span style="color: red;">/01</span>
+
+            </p>
+            <p style="padding-left: 50px; padding-top: 20px;font-size: 12px;">
+                新世界是一个新世界新世界是一个新世界新世界是一个新世界
+            </p>
+            <p style="padding-left: 50px; padding-top: 20px;font-size: 12px;">
+                新世界是一个新世界新世界是一个新世界新世界是一个新世界
+            </p>
+            <p style="padding-left: 50px; padding-top:20px;font-size: 12px;">
+                新世界是一个新世界新世界是一个新世界新世界是一个新世界
+            </p>
+            <p style="padding-left: 50px; padding-top: 20px;font-size: 12px;">
+                新世界是一个新世界新世界是一个新世界
+            </p>
+            <p style="font-size: 12px; color: red;border: 1px solid red; width: 100px;height: 30px;line-height: 30px; display: block;margin-left: 150px; margin-top: 30px;text-align: center;">
+                更多详情
+            </p>
+            <img src="images/14_03.jpg" alt="" style="padding-left: 150px
+            ;">
+
+        </div>
+    </div>
+    <div class="eleven">
+        <div class="eleven1">
+            <p style="padding-left: 170px; padding-top: 100px; color: white; ">新时代</p>
+            <p style="padding-left: 130px; color: white;">关于爱生活的我们</p>
+            <div style="width: 30px; height: 2px;background-color: white;margin-left: 180px; margin-top: 20px;"></div>
+            <p style="font-size: 15px; color: white; border: 1px solid white; margin-left: 130px; margin-top: 30px;display: block;
+            width: 120px; height: 30px; text-align: center; line-height: 30px;">查看更多</p>
+        </div>
+        <div class="eleven2">
+            <p style="padding-left: 170px; padding-top: 100px; color: black; ">新时代</p>
+            <p style="padding-left: 130px; color: black;">关于爱生活的我们</p>
+            <div style="width: 30px; height: 2px;background-color: black ;margin-left: 180px; margin-top: 20px;"></div>
+            <p style="font-size: 15px; color:red ; border: 1px solid red ; margin-left: 130px; margin-top: 30px;display: block;
+            width: 120px; height: 30px; text-align: center; line-height: 30px;">查看更多</p>
+        </div>
+        <div class="eleven3">
+            <img src="images/15_03.jpg" alt="">
+        </div>
+    </div>
+    <div class="twelve">
+        <p style="padding-left: 540px;padding-top: 50px;">成为我们的志愿者</p>
+        <div style="width: 30px; height: 2px;background-color: red;margin-left: 585px; margin-top: 10px;"></div>
+        <p style="padding-left: 400px;font-size: 12px; color:#666666;padding-top: 10px;">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情</p>
+        <p style="padding-left: 450px;font-size: 12px; color: #666666;padding-top: 10px;">那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+    </div>
+    <div class="thirteen">
+        <div class="thirteen1">
+            <p>新世界志愿者协议</p>
+            <p style="font-size: 12px;">加入新世界志愿者的人必须遵守中华人民共和国的<br>相关法律法规，并且本着平等自愿的原则......</p>
+            <img src="images/16_03.jpg" alt="" style="padding-left: 220px;">
+            <p style="padding-top: 30px;">新世界志愿者权利</p>
+            <p style="font-size: 12px;">新世界志愿者享受新世界内部所有资源共享的权利，并<br>且享受所在四新世界活动的优先参与资格</p>
+            <img src="images/16_03.jpg" alt="" style="padding-left: 220px
+            ;">
+            <p style="padding-top: 20px;">更多条款</p>
+            <img src="images/16_03.jpg" alt="" style="padding-left: 220px;">
+        </div>
+        <div class="thirteen2">
+            <div class="name">姓名：</div>
+            <div class="age">年龄：</div>
+            <div class="phone">联系方式：</div>
+            <div class="address">联系地址：</div>
+            <div class="life">请简单描述你梦想的生活：</div>
+            <div class="submit">提交申请</div>
+        </div>
+    </div>
+    <div class="fourteen">
+        <p style="color: white; font-size: 20px;padding-left: 570px;padding-top: 30px;">联系我们</p>
+        <p style="font-size: 12px; padding-left: 400px; padding-top: 10px;color: white;">为了更好的获取我们最新的产品咨询，你可以留下你的电子邮箱快速订阅我们的产品咨询</p>
+        <p style="font-size: 12px; padding-left: 530px;color: white;">也可以通过以下任何一种方式获取我们的动态</p>
+        <input type="text" placeholder="someone@email.com" style="width: 400px; height: 25px;margin-left: 400px;margin-top: 20px;">
+        <input type="button" value="提交" style="height: 30px; width: 60px;background-color: #666666;color: white;">
+        <img src="images/17_03.jpg" alt="" style="margin-left: 520px; margin-top: 20px;">
+    </div>
+    <div class="fifteen">
+        @2016新世界
+    </div>
+</body>
+
+</html>

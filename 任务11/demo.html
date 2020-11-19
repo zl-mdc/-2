@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/index.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .header {
+            width: 100%;
+            height: 40px;
+            background-color: #99dddd;
+        }
+        
+        .header p {
+            text-align: center;
+            line-height: 40px;
+            color: white;
+        }
+        
+        .banner {
+            height: 50px;
+        }
+        
+        .banner ul li {
+            list-style: none;
+            float: left;
+            width: 20%;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        img {
+            width: 100%;
+        }
+        /* .nav {
+            height: 150px;
+        } */
+        
+        .nav ul li {
+            float: left;
+            width: 20%;
+            height: 80px;
+            /* background-color: violet; */
+            text-align: center;
+            /* background-image: url(images/2_03.jpg);
+            background-size: 40px no-repeat; */
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .title {
+            height: 150px;
+            margin-top: 80px;
+        }
+        
+        .title ul li {
+            margin-top: 5px;
+            float: left;
+            width: 33.33%;
+            height: 130px;
+            /* background-color: #cccccc; */
+            text-align: center;
+        }
+        /* .mokuai {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          
+        } */
+        
+        .mokuai {
+            width: 100%;
+            height: 250px;
+            /* background-color: pink;s */
+        }
+        
+        .one {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 33.33%;
+        }
+        
+        .one img {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .two {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 33.33%;
+        }
+        
+        .two span {
+            text-align: center;
+            line-height: 40px;
+            width: 90%;
+            height: 40px;
+            margin-top: 15px;
+            background-color: #eceeed;
+        }
+        
+        .three {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 33.33%;
+        }
+        
+        .three span {
+            text-align: center;
+            line-height: 40px;
+            width: 90%;
+            height: 40px;
+            margin-top: 15px;
+            background-color: #eceeed;
+        }
+        
+        .four {
+            height: 110px;
+            width: 100%;
+            /* background-color: pink; */
+        }
+        
+        .four img {
+            width: 33.33%;
+            float: left;
+        }
+        
+        .four span {
+            width: 66.67%;
+            /* display: inline; */
+            vertical-align: top;
+            font-size: 22px;
+        }
+        
+        .four p {
+            width: 66.67%;
+            font-size: 15px;
+            color: #cccccc;
+            vertical-align: bottom;
+        }
+        
+        .five {
+            height: 110px;
+            width: 100%;
+            /* background-color: pink; */
+        }
+        
+        .five img {
+            width: 33.33%;
+            float: left;
+        }
+        
+        .five span {
+            width: 66.67%;
+            /* display: inline; */
+            vertical-align: top;
+            font-size: 22px;
+        }
+        
+        .five p {
+            width: 66.67%;
+            font-size: 15px;
+            color: #cccccc;
+            vertical-align: bottom;
+        }
+        
+        .six {
+            display: flex;
+            background-color: pink;
+            height: 89px;
+            width: 100%;
+            justify-content: flex-start;
+        }
+        
+        .six span {
+            width: 33.33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p>这是标题</p>
+    </div>
+    <div class="banner">
+        <ul>
+            <li>导航</li>
+            <li style="border-bottom: 2px solid #99dddd;">导航</li>
+            <li>导航</li>
+            <li>导航</li>
+            <li>导航</li>
+        </ul>
+    </div>
+    <img src="images/1_02.jpg" alt="">
+    <div class="nav">
+        <ul>
+            <li>
+                <img src="images/2_03.jpg" alt="">
+                <span>标签</span>
+            </li>
+            <li>
+                <img src="images/2_03.jpg" alt="">
+                <span>标签</span>
+            </li>
+            <li>
+                <img src="images/2_03.jpg" alt="">
+                <span>标签</span>
+            </li>
+            <li>
+                <img src="images/2_03.jpg" alt="">
+                <span>标签</span>
+            </li>
+            <li>
+                <img src="images/2_03.jpg" alt="">
+                <span>标签</span>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        <ul>
+            <li>
+                <img src="images/4_03.jpg" alt="">
+                <h5>分栏一</h5>
+                <h6 style="color: #666666;">分栏小标题</h6>
+            </li>
+            <li>
+                <img src="images/4_03.jpg" alt="">
+                <h5>分栏一</h5>
+                <h6 style="color: #666666;">分栏小标题</h6>
+            </li>
+            <li>
+                <img src="images/4_03.jpg" alt="">
+                <h5>分栏一</h5>
+                <h6 style="color: #666666;">分栏小标题</h6>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 10px; width: 100%;background-color: #eeeeee;">
+
+    </div>
+    <h4 style="padding-top: 10px;padding-left: 10px;">模块一</h4>
+    <div style="height: 5px; width:100%; background-color: #eeeeee;"></div>
+    <div class="mokuai">
+        <div class="one">
+            <span>
+               <img src="images/4_03.jpg" alt="">
+           </span>
+            <span>
+                <img src="images/4_03.jpg" alt="">
+            </span>
+        </div>
+        <div class="two">
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+        </div>
+        <div class="three">
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+        </div>
+    </div>
+
+
+
+
+    <h4 style="padding-top: 10px;padding-left: 10px;">模块二</h4>
+    <div style="height: 5px; width:100%; background-color: #eeeeee;"></div>
+    <div class="mokuai">
+        <div class="one">
+            <span>
+               <img src="images/4_03.jpg" alt="">
+           </span>
+            <span>
+                <img src="images/4_03.jpg" alt="">
+            </span>
+        </div>
+        <div class="two">
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+        </div>
+        <div class="three">
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+            <span>这是文案</span>
+        </div>
+    </div>
+    <div style="height: 15px; width:100%; background-color: #eeeeee;"></div>
+    <div class="four">
+        <img src="images/4_03.jpg" alt="">
+        <span>这是文章标题字号为22的文章标题</span>
+        <p>文章来源 6分钟前</p>
+    </div>
+    <div style="height: 10px;background:#eeeeee"></div>
+    <div class="five">
+        <img src="images/4_03.jpg" alt="">
+        <span>这是文章标题字号为22的文章标题</span>
+        <p>文章来源 6分钟前</p>
+    </div>
+    <div style="height: 10px;background:#eeeeee"></div>
+    <p>这个也是文章标题字号是22的文章标题</p>
+    <div class="six">
+        <span>
+           <img src="images/5_03.jpg" alt="">
+        </span>
+        <span>
+            <img src="images/5_03.jpg" alt="">
+        </span>
+        <span>
+            <img src="images/5_03.jpg" alt="">
+        </span>
+    </div>
+    <span style="font-size: 15px; color: #cccccc;">文章来源   7分钟前</span>
+</body>
+
+</html>
